@@ -36,6 +36,7 @@ variable "application_instances" {
 # Configure the IBM Cloud Provider
 provider "ibm" {
   ibmcloud_api_key = "${var.ibm_cloud_apikey}"
+  region = "London"
 }
 
 data "ibm_space" "myspace" {
