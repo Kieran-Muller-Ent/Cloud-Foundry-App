@@ -50,7 +50,7 @@ resource "ibm_app" "cfapp" {
   space_guid        = "${data.ibm_space.myspace.id}"
   wait_time_minutes = 10
   buildpack         = "php_buildpack"
-  app_path          = "${path.module}/appcode/goapp.zip"
+#   app_path          = "${path.module}/appcode/goapp.zip"
   app_version       = "${var.application_version}"
   route_guid        = ["${ibm_app_route.myroute.id}"] 
   instances         = "${var.application_instances}"
